@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>For The Win</title>
+
+	<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css">
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/brackets.css" />
+        <!-- <link rel="stylesheet" href="css/index.css" /> -->
+
+   <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+   <script type="text/javascript" src="js/index.js"></script>
+
+    </head>
+    <body id="body">
+        <!-- START HOMEPAGE -->
+        <div id="homepage" class="page center">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		For The Win
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content">
+<br><br>
+	    Welcome to For the Win!  Where boxing and MMA fans come to get in on the fight action. <br><br>
+	    <div class="topcoat-button-bar__item">
+
+	      <button class="topcoat-button-bar__button--large">Sign Up With Facebook</button>
+	      <br><br>
+	      
+    <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
+  </div>
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END HOMEPAGE -->
+        
+        <!-- START PICKAFIGHT -->
+        <div id="pickafight" class="page center">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		Pick A Fight
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content">
+
+	    <div class="topcoat-button-bar__item">
+
+	      <br><br>
+
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Canelo Alverez vs Amir Khan
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Keith Thurman vs Shawn Porter
+	    </label>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Tyson Fury vs Wladimir Klitschko
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Terence Crawford vs Viktor Postol
+	    </label>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Leo Santa Cruz vs Carl Frampton
+	    </label><br>
+
+	      
+    <a href="#prediction" class="topcoat-button-bar__button--large navigate">Submit and Predict the Winner</a>
+  </div>
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END PICKAFIGHT -->
+
+       <!-- START YOUR PREDICTION PAGE -->
+        <div id="prediction" class="page left">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		Predict the Outcome
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content">
+<br>
+	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
+
+	    Winner:<br>
+	    
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Canelo Alverez
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Amir Khan
+	    </label>
+	    <br>
+	    <br>
+	    By:<br>
+<label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+ Knockout
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Technical Knockout (TKO)
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+ Majority Decision
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Split Decision
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Draw
+	    </label><br><br>
+	    <br>
+	    Round (if relevant):<br>
+	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
+	    <br>
+	    <br>
+	    
+	    <div class="topcoat-button-bar__item">
+    <button class="topcoat-button-bar__button--large">Submit and share</button><br>and proceed to undercards
+	    </div>
+	    
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END YOUR PREDICTION PAGE -->
+
+	<!-- START CONFIRM AND SHARE PAGE -->
+        <div id="confirmshare" class="page center">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		Share your prediction
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content">
+	    
+	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
+
+	    You have predicted that Canelo Alvarez will defeat Amir Khan on May 7, 2016 by Technical Knockout in Round 8.
+
+	    <br>
+	    <br>
+	    
+
+<b>FACEBOOK SHARE</b><br>
+<b>TWITTER SHARE</b>
+	
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END CONFIRM AND SHARE PAGE -->
+
+	<!-- START SCORING PAGE -->
+        <div id="scorecard" class="page center">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		Score the fight
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content">
+
+<br>
+	    <table border=1 width=350>
+	      <tr>
+		<td>Round</td>
+		<td>Canelo</td>
+		<td>Khan</td>
+	      </tr>
+	      <tr>
+		<td>1</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>2</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>3</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>4</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>5</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>6</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>7</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>8</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      </table>
+	
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END SCORING PAGE -->
+
+		<!-- START SETTINGS PAGE -->
+        <div id="settings" class="page left">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		Settings
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content">
+	  
+<b>Connect Facebook</b><br>
+<b>Connect Twitter</b>
+	
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END SETTINGS PAGE -->
+	
+    </body>
+</html>
