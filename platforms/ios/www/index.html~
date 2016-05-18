@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-    Licensed to the Apache Software Foundation (ASF) under one
+     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
     regarding copyright ownership.  The ASF licenses this file
@@ -46,7 +46,7 @@
 
     </head>
     <body id="body">
-        <!-- START LANDING PAGE -->
+        <!-- START HOMEPAGE -->
         <div id="homepage" class="page center">
           <div class="topcoat-navigation-bar header">
 	    <div class="topcoat-navigation-bar__item center full">
@@ -59,14 +59,14 @@
 	    </div>
 	  
 	  <content class="content">
-
+<br><br>
 	    Welcome to For the Win!  Where boxing and MMA fans come to get in on the fight action. <br><br>
 	    <div class="topcoat-button-bar__item">
 
 	      <button class="topcoat-button-bar__button--large">Sign Up With Facebook</button>
 	      <br><br>
 	      
-    <a href="#prediction" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
+    <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
   </div>
 	    </content>
 	  
@@ -93,8 +93,82 @@
 	    
 	    </footer>
 
-        </div><!-- END LANDING PAGE -->
+        </div><!-- END HOMEPAGE -->
         
+        <!-- START PICKAFIGHT -->
+        <div id="pickafight" class="page center">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		Pick A Fight
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content">
+
+	    <div class="topcoat-button-bar__item">
+
+	      <br><br>
+
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Canelo Alverez vs Amir Khan
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Keith Thurman vs Shawn Porter
+	    </label>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Tyson Fury vs Wladimir Klitschko
+	    </label><br>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Terence Crawford vs Viktor Postol
+	    </label>
+	    <label class="topcoat-radio-button">
+  <input type="radio" name="topcoat">
+  <div class="topcoat-radio-button__checkmark"></div>
+  Leo Santa Cruz vs Carl Frampton
+	    </label><br>
+
+	      
+    <a href="#prediction" class="topcoat-button-bar__button--large navigate">Submit and Predict the Winner</a>
+  </div>
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END PICKAFIGHT -->
+
        <!-- START YOUR PREDICTION PAGE -->
         <div id="prediction" class="page left">
           <div class="topcoat-navigation-bar header">
@@ -108,7 +182,7 @@
 	    </div>
 	  
 	  <content class="content">
-
+<br>
 	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
 
 	    Winner:<br>
