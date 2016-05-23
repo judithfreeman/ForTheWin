@@ -145,3 +145,8 @@
 	z-index: 7;
 	width: 100%;
 }
+
+.fa.icon {
+font-size: 2em;
+text-decoration: none;
+}

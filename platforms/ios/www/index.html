@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-     Licensed to the Apache Software Foundation (ASF) under one
+    Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
     regarding copyright ownership.  The ASF licenses this file
@@ -72,21 +72,21 @@
 	  
 	  <footer class="topcoat-navigation-bar footer">
 	    <div class="topcoat-navigation-bar__item left quarter">
-	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+	      <a href="#" class="refresh_location fa fa-home icon"></a>
 
 	      </div>
 	    
 	    <div class="topcoat-navigation-bar__item left quarter center-left">
-              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+              <a href="#favorite_menu_page" class="fa fa-bar-chart icon" id="favorites_menu_home"></a>
 
 	      </div>
 	    
 	    <div class="topcoat-navigation-bar__item center quarter center-right">
-              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+              <a href="#directions" class="fa fa-trophy icon"></a>
 	      </div>
 	    
 	    <div class="topcoat-navigation-bar__item center quarter">
-	      <a href="#route_list" class="icon icon-list"></a> 
+	      <a href="#settings" class="fa fa-cog icon"></a> 
 
 	      </div>
 	    
@@ -185,7 +185,7 @@
 <br>
 	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
 
-	    Winner:<br>
+	    Winner:<br><div>
 	    
 	    <label class="topcoat-radio-button">
   <input type="radio" name="topcoat">
@@ -196,10 +196,10 @@
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
   Amir Khan
-	    </label>
+	    </label></div>
 	    <br>
 	    <br>
-	    By:<br>
+	    By:<br><div>
 <label class="topcoat-radio-button">
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
@@ -224,17 +224,16 @@
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
   Draw
-	    </label><br><br>
+	    </label><br><br></div>
 	    <br>
 	    Round (if relevant):<br>
 	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
-	    <br>
+	    <br> 
 	    <br>
 	    
-	    <div class="topcoat-button-bar__item">
-    <button class="topcoat-button-bar__button--large">Submit and share</button><br>and proceed to undercards
-	    </div>
-	    
+    <a href="#confirmshare" class="topcoat-button-bar__button--large navigate">Submit and share</a><br>
+
+
 	    </content>
 	  
 	  <footer class="topcoat-navigation-bar footer">
@@ -275,10 +274,11 @@
 	    </div>
 	  
 	  <content class="content">
-	    
+	    <br>
+<br>
 	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
 
-	    You have predicted that Canelo Alvarez will defeat Amir Khan on May 7, 2016 by Technical Knockout in Round 8.
+	    I predict that Canelo Alvarez will defeat Amir Khan on May 7, 2016 by Technical Knockout in Round 8.
 
 	    <br>
 	    <br>
@@ -286,8 +286,70 @@
 
 <b>FACEBOOK SHARE</b><br>
 <b>TWITTER SHARE</b>
+
+    <a href="#overallpredictions" class="topcoat-button-bar__button--large navigate">View Overall Predictions</a><br>
 	
 	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    	    
+	    </footer>
+
+        </div><!-- END CONFIRM AND SHARE PAGE -->
+
+	<!-- START OVERALL PREDICTIONS PAGE -->
+        <div id="overallpredictions" class="page center">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		Overall predictions
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content"> 
+	    <br>
+<br>
+	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
+<br>
+<p>
+<u>For The Win Community</u><br>
+Canelo 83%<br>
+Khan 17%</p>	
+	<br>
+<p>
+<u>Your Friends</u><br>
+Canelo 60%<br>
+Khan 40%
+</p>
+<br>
+<p>
+<u>Vegas Odds</u><br>
+Canelo 95%<br>
+Khan 5%
+</p>
+
+    </content>
 	  
 	  <footer class="topcoat-navigation-bar footer">
 	    <div class="topcoat-navigation-bar__item left quarter">
@@ -403,6 +465,52 @@
 	    </footer>
 
         </div><!-- END SCORING PAGE -->
+
+	<!-- START SCORE ROUND PAGE -->
+        <div id="scoreround" class="page center">
+          <div class="topcoat-navigation-bar header">
+	    <div class="topcoat-navigation-bar__item center full">
+	      <h1 class="topcoat-navigation-bar__title">
+		Round 1: Canelo vs Khan
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+	    </div>
+	  
+	  <content class="content">
+
+<h2>Canelo:</h2>	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
+<br>
+<h2>Khan</h2>	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
+	
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#" class="refresh_location icon-location-arrow icon"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#favorite_menu_page" class="favorites_menu_btn icon icon-star" id="favorites_menu_home"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#directions" class="directions_btn icon icon-level-down icon-rotate-270"></a>
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#route_list" class="icon icon-list"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END SCORE ROUND PAGE -->
+
 
 		<!-- START SETTINGS PAGE -->
         <div id="settings" class="page left">
