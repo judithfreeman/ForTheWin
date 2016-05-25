@@ -50,23 +50,28 @@
     <body id="body">
         <!-- START HOMEPAGE -->
         <div id="homepage" class="page center">
+
           <div class="topcoat-navigation-bar header">
-	    <div class="topcoat-navigation-bar__item center full">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
 		For The Win
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
-	  
+  
 	  <content class="content">
 <br><br>
 	    Welcome to For the Win!  Where boxing and MMA fans come to get in on the fight action. <br><br>
 	    <div class="topcoat-button-bar__item">
 
-	      <button class="topcoat-button-bar__button--large">Sign Up With Facebook</button>
-	      <br><br>
+<!--	      <button class="topcoat-button-bar__button--large">Sign Up With Facebook</button>
+	-->      <br><br>
 	      
     <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
 <br><br>
@@ -74,7 +79,7 @@
   </div>
 	    </content>
 	  
-	  <footer class="topcoat-navigation-bar footer">
+ 	  <footer class="topcoat-navigation-bar footer">
 	    <div class="topcoat-navigation-bar__item left quarter">
 	      <a href="#homepage" class="refresh_location fa fa-home icon navigate"></a>
 
@@ -101,14 +106,20 @@
         
         <!-- START PICKAFIGHT -->
         <div id="pickafight" class="page center">
+
           <div class="topcoat-navigation-bar header">
-	    <div class="topcoat-navigation-bar__item center full">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
 		Pick A Fight
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
 	  
 	  <content class="content">
@@ -177,22 +188,28 @@
 
        <!-- START YOUR PREDICTION PAGE -->
         <div id="prediction" class="page left">
+
           <div class="topcoat-navigation-bar header">
-	    <div class="topcoat-navigation-bar__item center full">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
 		Predict the Outcome
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
 	  
 	  <content class="content">
 <br>
 	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
 
-	    Winner:<br><div>
-	    
+	    Winner:<br><div class="winner">
+	    <form>
 	    <label class="topcoat-radio-button">
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
@@ -202,10 +219,10 @@
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
   Amir Khan
-	    </label></div>
+	    </label></form></div>
 	    <br>
 	    <br>
-	    By:<br><div>
+	    By:<br><div class="method"><form>
 <label class="topcoat-radio-button">
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
@@ -230,7 +247,7 @@
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
   Draw
-	    </label><br><br></div>
+	    </label><br><br></form></div>
 	    <br>
 	    Round (if relevant):<br>
 	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
@@ -269,21 +286,27 @@
 
 	<!-- START CONFIRM AND SHARE PAGE -->
         <div id="confirmshare" class="page center">
+
           <div class="topcoat-navigation-bar header">
-	    <div class="topcoat-navigation-bar__item center full">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
 		Share your prediction
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
-	  
+
 	  <content class="content">
 	    <br>
 <br>
 	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
-
+<br>
 	    I predict that Canelo Alvarez will defeat Amir Khan on May 7, 2016 by Technical Knockout in Round 8.
 
 	    <br>
@@ -292,7 +315,7 @@
 
 <b>FACEBOOK SHARE</b><br>
 <b>TWITTER SHARE</b>
-
+<br><br>
     <a href="#overallpredictions" class="topcoat-button-bar__button--large navigate">View Overall Predictions</a><br>
 	
 	    </content>
@@ -324,16 +347,22 @@
 
 	<!-- START OVERALL PREDICTIONS PAGE -->
         <div id="overallpredictions" class="page center">
+
           <div class="topcoat-navigation-bar header">
-	    <div class="topcoat-navigation-bar__item center full">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
 		Overall predictions
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
-	  
+
 	  <content class="content"> 
 	    <br>
 <br>
@@ -341,19 +370,26 @@
 <br>
 <p>
 <u>For The Win Community</u><br>
-Canelo 83%<br>
-Khan 17%</p>	
+<table>
+<tr><td>Canelo</td><td>83%</td></tr>
+<tr><td>Khan</td><td>17%</td></tr>
+</table>
+</p>	
 	<br>
 <p>
 <u>Your Friends</u><br>
-Canelo 60%<br>
-Khan 40%
+<table>
+<tr><td>Canelo</td><td>60%</td></tr>
+<tr><td>Khan</td><td>40%</td></tr>
+</table>
 </p>
 <br>
 <p>
 <u>Vegas Odds</u><br>
-Canelo 95%<br>
-Khan 5%
+<table>
+<tr><td>Canelo</td><td>95%</td></tr>
+<tr><td>Khan</td><td>5%</td></tr>
+</table>
 </p>
 
     </content>
@@ -386,16 +422,22 @@ Khan 5%
 
 	<!-- START SCORECARD PAGE -->
         <div id="scorecard" class="page center">
+
           <div class="topcoat-navigation-bar header">
-	    <div class="topcoat-navigation-bar__item center full">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
-		Score the fight
+		Score the Fight
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
-	  
+
 	  <content class="content">
 
 	    <div class="topcoat-button-bar__item">
@@ -404,6 +446,7 @@ Khan 5%
   </div>
 
 <br>
+<h1>Your Scorecard</h1>
 	    <table border=1 width=350>
 	      <tr>
 		<td>Round</td>
@@ -477,26 +520,140 @@ Khan 5%
 	    
 	    </footer>
 
-        </div><!-- END SCORECARD PAGE -->
+        </div>
+<!-- END SCORECARD PAGE -->
+
+<!-- START SCORECARD2 PAGE -->
+        <div id="scorecard2" class="page center">
+
+          <div class="topcoat-navigation-bar header">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
+	      <h1 class="topcoat-navigation-bar__title">
+		Score the Fight
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
+	    </div>
+
+	  <content class="content">
+
+	    <div class="topcoat-button-bar__item">
+
+    <a href="#scoreround" class="topcoat-button-bar__button--large navigate">Score Round 2</a>
+  </div>
+
+<br>
+<h1>Your Scorecard</h1>
+	    <table border=1 width=350>
+	      <tr>
+		<td>Round</td>
+		<td>Canelo</td>
+		<td>Khan</td>
+	      </tr>
+	      <tr>
+		<td>1</td>
+		<td>10</td>
+		<td>9</td>
+	      </tr>
+	      <tr>
+		<td>2</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>3</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>4</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>5</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>6</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>7</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>8</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      </table>
+
+	    </content>
+
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#homepage" class="refresh_location fa fa-home icon navigate"></a>
+
+	      </div>
+	    	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#scorecard" class="fa fa-trophy icon navigate"></a>
+	      </div>
+
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#settings" class="fa fa-cog icon navigate"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+</div>
+	<!-- END SCORECARD2 PAGE -->
 
 	<!-- START SCORE ROUND PAGE -->
         <div id="scoreround" class="page center">
+
           <div class="topcoat-navigation-bar header">
-	    <div class="topcoat-navigation-bar__item center full">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
 		Round 1: Canelo vs Khan
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
-	  
+
 	  <content class="content">
 
 <h2>Canelo:</h2>	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
 <br>
 <h2>Khan</h2>	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
 	
+	    <div class="topcoat-button-bar__item">
+
+    <a href="#scorecard2" class="topcoat-button-bar__button--large navigate">Submit</a>
+  </div>
+
 	    </content>
 	  
 	  
@@ -528,16 +685,22 @@ Khan 5%
 
 		<!-- START SETTINGS PAGE -->
         <div id="settings" class="page left">
+
           <div class="topcoat-navigation-bar header">
-	    <div class="topcoat-navigation-bar__item center full">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
 		Settings
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
-	  
+
 	  <content class="content">
 	  
 <b>Connect Facebook</b><br>
