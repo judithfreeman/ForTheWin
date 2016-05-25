@@ -67,15 +67,50 @@
   
 	  <content class="content">
 <br><br>
-	    Welcome to For the Win!  Where boxing and MMA fans come to get in on the fight action. <br><br>
+	<h3>    Welcome to For the Win!  Where boxing and MMA fans come to get in on the fight action. </h3>
+
+<br>
 	    <div class="topcoat-button-bar__item">
 
-	      <button class="topcoat-button-bar__button--large">Sign Up With Facebook</button>
-	      <br><br>
-	      
-    <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
+<!--	      <button class="topcoat-button-bar__button--large">Sign Up With Facebook</button>
+	-->     
+<h3>Pick A Fight</h3>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a></li>
+</ul>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<a href="#prediction" class="topcoat-button-bar__button navigate">Canelo Alverez vs Amir Khan</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Keith Thurman vs Shawn Porter</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Tyson Fury vs Wladimir Klitschko</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Terence Crawford vs Viktor Postol</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Leo Santa Cruz vs Carl Frampton</a>
+
 <br><br>
-    <a href="#scorecard" class="topcoat-button-bar__button--large navigate">Score A Fight</a>
+
+<h3>Score Today's Fights</h3>
+<a href="#scorecard" class="topcoat-button-bar__button navigate">May 7: Canelo vs Khan</a>
+
+<!--     <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
+<br><br> -->
+
   </div>
 	    </content>
 	  
@@ -446,6 +481,7 @@
   </div>
 
 <br>
+<h1>Your Scorecard</h1>
 	    <table border=1 width=350>
 	      <tr>
 		<td>Round</td>
@@ -519,7 +555,110 @@
 	    
 	    </footer>
 
-        </div><!-- END SCORECARD PAGE -->
+        </div>
+<!-- END SCORECARD PAGE -->
+
+<!-- START SCORECARD2 PAGE -->
+        <div id="scorecard2" class="page center">
+
+          <div class="topcoat-navigation-bar header">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
+	      <h1 class="topcoat-navigation-bar__title">
+		Score the Fight
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
+	    </div>
+
+	  <content class="content">
+
+	    <div class="topcoat-button-bar__item">
+
+    <a href="#scoreround" class="topcoat-button-bar__button--large navigate">Score Round 2</a>
+  </div>
+
+<br>
+<h1>Your Scorecard</h1>
+	    <table border=1 width=350>
+	      <tr>
+		<td>Round</td>
+		<td>Canelo</td>
+		<td>Khan</td>
+	      </tr>
+	      <tr>
+		<td>1</td>
+		<td>10</td>
+		<td>9</td>
+	      </tr>
+	      <tr>
+		<td>2</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>3</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>4</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>5</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>6</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>7</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      <tr>
+		<td>8</td>
+		<td><br></td>
+		<td><br></td>
+	      </tr>
+	      </table>
+
+	    </content>
+
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#homepage" class="refresh_location fa fa-home icon navigate"></a>
+
+	      </div>
+	    	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#scorecard" class="fa fa-trophy icon navigate"></a>
+	      </div>
+
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#settings" class="fa fa-cog icon navigate"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+</div>
+	<!-- END SCORECARD2 PAGE -->
 
 	<!-- START SCORE ROUND PAGE -->
         <div id="scoreround" class="page center">
@@ -547,7 +686,7 @@
 	
 	    <div class="topcoat-button-bar__item">
 
-    <a href="#scorecard" class="topcoat-button-bar__button--large navigate">Submit</a>
+    <a href="#scorecard2" class="topcoat-button-bar__button--large navigate">Submit</a>
   </div>
 
 	    </content>

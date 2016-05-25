@@ -18,6 +18,8 @@
  */
 
 jQuery(document).ready(function($) {
+
+	FastClick.attach(document.body);
 	
 	//console.log('docready');
 
