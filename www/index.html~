@@ -261,7 +261,7 @@
   <div class="topcoat-radio-button__checkmark"></div>
   Amir Khan
 	    </label></form></div>
-	    <br>
+	
 	    <br>
 	    By:<br><div class="method"><form>
 <label class="topcoat-radio-button">
@@ -288,10 +288,25 @@
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
   Draw
-	    </label><br><br></form></div>
+	    </label><br></form></div>
 	    <br>
-	    Round (if relevant):<br>
-	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
+	    Round:<br>
+<select>
+  <option value="round1">Round 1</option>
+  <option value="round2">Round 2</option>
+  <option value="round3">Round 3</option>
+  <option value="round4">Round 4</option>
+  <option value="round5">Round 5</option>
+  <option value="round6">Round 6</option>
+  <option value="round7">Round 7</option>
+  <option value="round8">Round 8</option>
+  <option value="round9">Round 9</option>
+  <option value="round10">Round 10</option>
+  <option value="round11">Round 11</option>
+  <option value="round12">Round 12</option>
+</select>
+
+
 	    <br> 
 	    <br>
 	    
@@ -805,8 +820,7 @@
     <div class="tab-content">
         <div id="tab1" class="tab active">
 
-<h3>Twitter</h3>
-<a class="twitter-timeline" href="https://twitter.com/hashtag/CaneloKhan" data-widget-id="735559187657154560">#CaneloKhan Tweets</a>
+<img src="img/canelokhantwitter.jpg" width="300">
         </div>
  
         <div id="tab2" class="tab">
