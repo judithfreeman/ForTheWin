@@ -67,15 +67,56 @@
   
 	  <content class="content">
 <br><br>
-	    Welcome to For the Win!  Where boxing and MMA fans come to get in on the fight action. <br><br>
+	<h3>    Welcome to For the Win!  Where boxing and MMA fans come to get in on the fight action. </h3>
+
+<br>
 	    <div class="topcoat-button-bar__item">
 
 <!--	      <button class="topcoat-button-bar__button--large">Sign Up With Facebook</button>
-	-->      <br><br>
-	      
-    <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
+	-->     
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Boxing</a></li>
+        <li><a href="#tab2">MMA</a></li>
+        <!-- <li><a href="#tab3">Baseball</a></li>
+        <li><a href="#tab4">Hockey</a></li> -->
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+<h3>Pick A Fight</h3>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Canelo Alverez vs Amir Khan</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Keith Thurman vs Shawn Porter</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Tyson Fury vs Wladimir Klitschko</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Terence Crawford vs Viktor Postol</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Leo Santa Cruz vs Carl Frampton</a>
+
+        </div>
+ 
+        <div id="tab2" class="tab">
+<h3>Pick A Fight</h3>
+            <p>MMA content</p>
+        </div>
+ 
+        <div id="tab3" class="tab">
+            <p>Baseball content</p>
+        </div>
+ 
+        <div id="tab4" class="tab">
+            <p>Hockey content</p>
+        </div>
+    </div>
+</div>
+
 <br><br>
-    <a href="#scorecard" class="topcoat-button-bar__button--large navigate">Score A Fight</a>
+
+<h3>Score Today's Fights</h3>
+<a href="#scorecard" class="topcoat-button-bar__button navigate">May 7: Canelo vs Khan</a>
+
+<!--     <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
+<br><br> -->
+
   </div>
 	    </content>
 	  
@@ -508,7 +549,7 @@
 	      </div>
 
 	    <div class="topcoat-navigation-bar__item left quarter center-left">
-              <a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
+              <a href="#social" class="fa fa-twitter icon navigate"></a>
 
 	      </div>
 	    
@@ -611,7 +652,7 @@
 	      </div>
 
 	    <div class="topcoat-navigation-bar__item left quarter center-left">
-              <a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
+              <a href="#social" class="fa fa-twitter icon navigate"></a>
 
 	      </div>
 	    
@@ -668,7 +709,7 @@
 	      </div>
 
 	    <div class="topcoat-navigation-bar__item left quarter center-left">
-              <a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
+              <a href="#social" class="fa fa-twitter icon navigate"></a>
 
 	      </div>
 	    
@@ -733,5 +774,83 @@
 
         </div><!-- END SETTINGS PAGE -->
 	
+	<!-- START SOCIAL PAGE -->
+        <div id="social" class="page left">
+
+          <div class="topcoat-navigation-bar header">
+
+	    <div class="topcoat-navigation-bar__item left quarter">
+<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+</div>
+	    <div class="topcoat-navigation-bar__item center half">
+	      <h1 class="topcoat-navigation-bar__title">
+		Social
+		</h1>
+	      
+	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      </div>
+<div class="topcoat-navigation-bar__item right quarter"></div>
+	    </div>
+
+	  <content class="content">
+
+
+
+<div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Twitter</a></li>
+        <li><a href="#tab2">Facebook</a></li>
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+
+<h3>Twitter</h3>
+<a class="twitter-timeline" href="https://twitter.com/hashtag/CaneloKhan" data-widget-id="735559187657154560">#CaneloKhan Tweets</a>
+        </div>
+ 
+        <div id="tab2" class="tab">
+<h3>Facebook</h3>
+
+
+        </div>
+ 
+<!--         <div id="tab3" class="tab">
+            <p>Baseball content</p>
+        </div>
+ 
+        <div id="tab4" class="tab">
+            <p>Hockey content</p>
+        </div> -->
+    </div>
+</div>
+	
+	    </content>
+	  
+	  <footer class="topcoat-navigation-bar footer">
+	    <div class="topcoat-navigation-bar__item left quarter">
+	      <a href="#homepage" class="refresh_location fa fa-home icon navigate"></a>
+
+	      </div>
+	    	    
+	    <div class="topcoat-navigation-bar__item center quarter center-right">
+              <a href="#scorecard" class="fa fa-trophy icon navigate"></a>
+	      </div>
+
+	    <div class="topcoat-navigation-bar__item left quarter center-left">
+              <a href="#social" class="fa fa-twitter icon navigate"></a>
+
+	      </div>
+	    
+	    <div class="topcoat-navigation-bar__item center quarter">
+	      <a href="#settings" class="fa fa-cog icon navigate"></a> 
+
+	      </div>
+	    
+	    
+	    </footer>
+
+        </div><!-- END SOCIAL PAGE -->
+
     </body>
 </html>
