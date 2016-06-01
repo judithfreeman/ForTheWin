@@ -32,7 +32,6 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>For The Win</title>
 
 	<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
@@ -40,11 +39,36 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/brackets.css" />
         <!-- <link rel="stylesheet" href="css/index.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
 
    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
    <script type="text/javascript" src="js/index.js"></script>
    <script type="text/javascript" src="js/fastclick.js"></script>
    <script type="text/javascript" src="js/hammer.min.js"></script>
+
+<!-- START FROM JOSH -->
+
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+
+<!--
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/ftw-preview.webflow.css">
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/32.png">
+  <link rel="apple-touch-icon" href="images/256.png">
+
+END FROM JOSH -->
 
     </head>
     <body id="body">
@@ -56,9 +80,8 @@
 	    <div class="topcoat-navigation-bar__item left quarter">
 </div>
 	    <div class="topcoat-navigation-bar__item center half">
-	      <h1 class="topcoat-navigation-bar__title">
-		For The Win
-		</h1>
+
+<img width="220" src="img/ftw_logo.png" class="logo">
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
@@ -86,21 +109,19 @@
     <div class="tab-content">
         <div id="tab1" class="tab active">
 <h3>Pick A Fight</h3>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Canelo Alverez vs Amir Khan (May 7)</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Keith Thurman vs Shawn Porter (June 25)</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Tyson Fury vs Wladimir Klitschko (July 9)</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Terence Crawford vs Viktor Postol (July 23)</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Leo Santa Cruz vs Carl Frampton (July 30)</a>
+<a href="#prediction" class="navigate submitbutton">May 7: Canelo vs Khan</a>
+<a href="#prediction" class="navigate submitbutton">June 25: Thurman vs Porter</a>
+<a href="#prediction" class="navigate submitbutton">July 9: Fury vs Klitschko</a>
+<a href="#prediction" class="navigate submitbutton">July 23: Crawford vs Postol</a>
 
         </div>
  
         <div id="tab2" class="tab">
 <h3>Pick A Fight</h3>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Thomas Almeida vs Cody Garbrandt (May 29)</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Luke Rockhold vs Michael Bisping (June 4)</a>            
-<a href="#prediction" class="topcoat-button-bar__button navigate">Marcos Galvao vs Edwardo Dantas (June 17)</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Blagoi Ivanov vs Josh Copeland (June 17)</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Roy MacDonald vs Stephen Thompson (June 18)</a>
+<a href="#prediction" class="navigate submitbutton">May 25: Almeida vs Garbrandt</a>
+<a href="#prediction" class="navigate submitbutton">June 4: Rockhold vs Bisping</a>            
+<a href="#prediction" class="navigate submitbutton">June 17: Galvao vs Dantas</a>
+<a href="#prediction" class="navigate submitbutton">June 17: Ivanov vs Copeland</a>
 
         </div>
  
@@ -117,7 +138,7 @@
 <br><br>
 
 <h3>Score Today's Fights</h3>
-<a href="#scorecard" class="topcoat-button-bar__button navigate">May 7: Canelo vs Khan</a>
+<a href="#scorecard" class="navigate submitbutton">May 7: Canelo vs Khan</a>
 
 <!--     <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
 <br><br> -->
@@ -315,7 +336,7 @@
 	    <br> 
 	    <br>
 	    
-    <a href="#confirmshare" class="topcoat-button-bar__button--large navigate">Submit and share</a><br>
+    <a href="#confirmshare" class="navigate submitbutton">Submit and share</a><br>
 
 
 	    </content>
@@ -377,7 +398,7 @@
 <b>FACEBOOK SHARE</b><br>
 <b>TWITTER SHARE</b>
 <br><br>
-    <a href="#overallpredictions" class="topcoat-button-bar__button--large navigate">View Overall Predictions</a><br>
+    <a href="#overallpredictions" class="navigate submitbutton">View Overall Predictions</a><br>
 	
 	    </content>
 	  
@@ -503,7 +524,7 @@
 
 	    <div class="topcoat-button-bar__item">
 
-    <a href="#scoreround" class="topcoat-button-bar__button--large navigate">Score Round 1</a>
+    <a href="#scoreround" class="navigate submitbutton">Score Round 1</a>
   </div>
 
 <br>
@@ -616,7 +637,7 @@ Friend2 8 10<br>
 Friend3 10 9<br>
 Friend4 9 10<br>
 <br>
-    <a href="#scoreround" class="topcoat-button-bar__button navigate">Score Round 2</a>
+    <a href="#scoreround" class="navigate submitbutton">Score Round 2</a>
   </div>
 <br>
 <h1>Your Scorecard</h1>
@@ -745,7 +766,7 @@ Friend4 9 10<br>
 
 	    <div class="topcoat-button-bar__item">
 
-    <a href="#scorecard2" class="topcoat-button-bar__button--large navigate">Submit</a>
+    <a href="#scorecard2" class="navigate submitbutton">Submit Scores</a>
   </div>
 
 	    </content>
@@ -837,18 +858,18 @@ Friend4 9 10<br>
 </div>
 	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
-		Social
+		Twitter
 		</h1>
 	      
-	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
 <div class="topcoat-navigation-bar__item right quarter"></div>
 	    </div>
 
 	  <content class="content">
 
+<img src="img/canelokhantwitter.jpg" width="300">
 
-
+<!--
 <div class="tabs">
     <ul class="tab-links">
         <li class="active"><a href="#tab1">Twitter</a></li>
@@ -867,16 +888,16 @@ Friend4 9 10<br>
 
         </div>
  
-<!--         <div id="tab3" class="tab">
+         <div id="tab3" class="tab">
             <p>Baseball content</p>
         </div>
  
         <div id="tab4" class="tab">
             <p>Hockey content</p>
-        </div> -->
+        </div>
     </div>
 </div>
-	
+-->	
 	    </content>
 	  
 	  <footer class="topcoat-navigation-bar footer">

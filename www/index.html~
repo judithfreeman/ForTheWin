@@ -32,7 +32,6 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
         <title>For The Win</title>
 
 	<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
@@ -40,11 +39,36 @@
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/brackets.css" />
         <!-- <link rel="stylesheet" href="css/index.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
 
    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
    <script type="text/javascript" src="js/index.js"></script>
    <script type="text/javascript" src="js/fastclick.js"></script>
    <script type="text/javascript" src="js/hammer.min.js"></script>
+
+<!-- START FROM JOSH -->
+
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+
+<!--
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/ftw-preview.webflow.css">
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/32.png">
+  <link rel="apple-touch-icon" href="images/256.png">
+
+END FROM JOSH -->
 
     </head>
     <body id="body">
@@ -56,9 +80,8 @@
 	    <div class="topcoat-navigation-bar__item left quarter">
 </div>
 	    <div class="topcoat-navigation-bar__item center half">
-	      <h1 class="topcoat-navigation-bar__title">
-		For The Win
-		</h1>
+
+<img width="220" src="img/ftw_logo.png" class="logo">
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
 	      </div>
@@ -86,17 +109,22 @@
     <div class="tab-content">
         <div id="tab1" class="tab active">
 <h3>Pick A Fight</h3>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Canelo Alverez vs Amir Khan</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Keith Thurman vs Shawn Porter</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Tyson Fury vs Wladimir Klitschko</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Terence Crawford vs Viktor Postol</a>
-<a href="#prediction" class="topcoat-button-bar__button navigate">Leo Santa Cruz vs Carl Frampton</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Canelo Alverez vs Amir Khan (May 7)</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Keith Thurman vs Shawn Porter (June 25)</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Tyson Fury vs Wladimir Klitschko (July 9)</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Terence Crawford vs Viktor Postol (July 23)</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Leo Santa Cruz vs Carl Frampton (July 30)</a>
 
         </div>
  
         <div id="tab2" class="tab">
 <h3>Pick A Fight</h3>
-            <p>MMA content</p>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Thomas Almeida vs Cody Garbrandt (May 29)</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Luke Rockhold vs Michael Bisping (June 4)</a>            
+<a href="#prediction" class="topcoat-button-bar__button navigate">Marcos Galvao vs Edwardo Dantas (June 17)</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Blagoi Ivanov vs Josh Copeland (June 17)</a>
+<a href="#prediction" class="topcoat-button-bar__button navigate">Roy MacDonald vs Stephen Thompson (June 18)</a>
+
         </div>
  
         <div id="tab3" class="tab">
@@ -600,10 +628,19 @@
 	  <content class="content">
 
 	    <div class="topcoat-button-bar__item">
-
-    <a href="#scoreround" class="topcoat-button-bar__button--large navigate">Score Round 2</a>
+<br>
+<h2>Round 1 Scores</h2>
+Canelo Khan<br>
+You 10 9<br>
+MediaGuy 10 9<br>
+MediaGirl 10 9<br>
+Friend1 9 10<br>
+Friend2 8 10<br>
+Friend3 10 9<br>
+Friend4 9 10<br>
+<br>
+    <a href="#scoreround" class="topcoat-button-bar__button navigate">Score Round 2</a>
   </div>
-
 <br>
 <h1>Your Scorecard</h1>
 	    <table border=1 width=350>
@@ -700,11 +737,35 @@
 	    </div>
 
 	  <content class="content">
+<h2>Canelo:</h2>	    
+<select>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10" selected="selected">10</option>
+</select>
 
-<h2>Canelo:</h2>	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
 <br>
-<h2>Khan</h2>	    <input type="text" class="topcoat-text-input" placeholder="text" value="">
-	
+<h2>Khan</h2>	    
+<select>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10" selected="selected">10</option>
+</select>
+
 	    <div class="topcoat-button-bar__item">
 
     <a href="#scorecard2" class="topcoat-button-bar__button--large navigate">Submit</a>
