@@ -291,7 +291,7 @@
 .button-bar__item,
 .topcoat-button-bar__item {
   display: table-cell;
-  width: auto;
+  width: 100%;
   border-radius: 0;
 }
 
