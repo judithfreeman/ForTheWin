@@ -234,6 +234,7 @@ h1 {
 
 .topcoat-navigation-bar__title {
 color: #FFFFFF;
+font-weight: 200;
 }
 
 p {
@@ -251,6 +252,7 @@ p {
   margin-right: auto;
   margin-left: -0.6rem;
   padding-top: 0.8rem;
+  -webkit-filter: invert(100%);
 }
 
 .content {
