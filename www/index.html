@@ -38,14 +38,14 @@
 
         <!-- Stylesheets -->
 		<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/brackets.css" />
+        <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <script type="text/javascript" src="js/modernizr.js"></script>
-
+   
         <!-- Javascript -->
+        <script type="text/javascript" src="js/modernizr.js"></script>
 	   <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
 	   <script type="text/javascript" src="js/index.js"></script>
 	   <script type="text/javascript" src="js/fastclick.js"></script>
@@ -89,17 +89,36 @@
   
 	  		<!-- Homepage Content -->
 		  	<content class="content">
-				<br><br>
-				<h3>
-					Welcome to For the Win -- <br>
-					where boxing and MMA fans go to get in on the fight action.
-				</h3>
 
-				<br>
-			    
+		  		<!-- Today's Fights -->
+					
+					<h3 class="todays-fight">Alvarez</h3>
+						<h3 class="todays-fight" style="font-size:36px; padding: 20px 0 0 0; line-height:0;">vs.</span>
+						<h3 class="todays-fight">Khan</h3>
+					</h3>
+					<br>
+					<p>Today, Saturday May 7th, 2016</p>
+					<p>9:00 pm ET/6:00 pm PT</p>
+					<p>HBO Boxing</p>
+					<br>
+					<a href="#scorecard" class="navigate ftw-button-light">
+						View Odds + Predictions
+					</a>
+					<br>
+					<a href="#scorecard" class="navigate ftw-button-light">
+						Cast Your Prediction
+					</a>
+					<br>
+					<a href="#scorecard" class="navigate ftw-button-light">
+						Score The Fight
+					</a>
+					
+					
+				
+			    <h3 class="fight-list-header">More Fights</h3>
+
 			    <!-- Tab Section -->
 			    
-
 					<div class="tabs">
 				    	<ul class="tab-links">
 				        	<li class="active"><a href="#tab1">Boxing</a></li>
@@ -113,22 +132,21 @@
 				    		<!-- Homepage Tab 1 Content / Boxing -->
 				        	<div id="tab1" class="tab active">
 							
-								<h3 class="fight-list-header">Pick A Fight</h3>
-								<a href="#prediction" class="fight-list">May 7: Canelo vs Khan</a>
-								<a href="#prediction" class="fight-list">June 25: Thurman vs Porter</a>
-								<a href="#prediction" class="fight-list">July 9: Fury vs Klitschko</a>
-								<a href="#prediction" class="fight-list last-in-fight-list">July 23: Crawford vs Postol</a>
+								
+								<a href="#prediction" class="navigate fight-list">May 7: Canelo vs Khan</a>
+								<a href="#prediction" class="navigate fight-list">June 25: Thurman vs Porter</a>
+								<a href="#prediction" class="navigate fight-list">July 9: Fury vs Klitschko</a>
+								<a href="#prediction" class="navigate fight-list last-in-fight-list">July 23: Crawford vs Postol</a>
 
 				        	</div>
 				 
 					 		<!-- Homepage Tab 2 Content / MMA -->
 					        <div id="tab2" class="tab">
 								
-								<h3 class="fight-list-header">Pick A Fight</h3>
-								<a href="#prediction" class="fight-list">May 25: Almeida vs Garbrandt</a>
-								<a href="#prediction" class="fight-list">June 4: Rockhold vs Bisping</a>            
-								<a href="#prediction" class="fight-list">June 17: Galvao vs Dantas</a>
-								<a href="#prediction" class="fight-list">June 17: Ivanov vs Copeland</a>
+								<a href="#prediction" class="navigate fight-list">May 25: Almeida vs Garbrandt</a>
+								<a href="#prediction" class="navigate fight-list">June 4: Rockhold vs Bisping</a>            
+								<a href="#prediction" class="navigate fight-list">June 17: Galvao vs Dantas</a>
+								<a href="#prediction" class="navigate fight-list">June 17: Ivanov vs Copeland</a>
 
 					        </div>
 					 
@@ -140,17 +158,10 @@
 					    	-->
 			 
 			    		</div> <!-- end tab-content -->
+
+			    		<!-- hacky way to create space below the tab module -->
+			    		<div style="margin-bottom:40px;">&nbsp;</div>
 					
-
-					<br><br>
-
-					<!-- Today's Fights -->
-					<h3>Score Today's Fights</h3>
-					
-					<a href="#scorecard" class="navigate submitbutton">
-						May 7: Canelo vs Khan
-					</a>
-
 				  </div><!-- end <div class="topcoat-button-bar__item"> content -->
 		    </content>
 		  
@@ -315,53 +326,62 @@
 	    			<form>
 						<label class="topcoat-radio-button">
 							<input type="radio" name="topcoat">
-						  		<div class="topcoat-radio-button__checkmark"></div>
-						 		Knockout
+						  	<div class="topcoat-radio-button__checkmark"></div>
+						 	Knockout
 						</label>
 						<br>
 	    
 	    				<label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Technical Knockout (TKO)
-	    </label><br>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
- Majority Decision
-	    </label><br>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Split Decision
-	    </label><br>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Draw
-	    </label><br></form></div>
-	    <br>
-	    Round:<br>
-<select>
-  <option value="round1">Round 1</option>
-  <option value="round2">Round 2</option>
-  <option value="round3">Round 3</option>
-  <option value="round4">Round 4</option>
-  <option value="round5">Round 5</option>
-  <option value="round6">Round 6</option>
-  <option value="round7">Round 7</option>
-  <option value="round8">Round 8</option>
-  <option value="round9">Round 9</option>
-  <option value="round10">Round 10</option>
-  <option value="round11">Round 11</option>
-  <option value="round12">Round 12</option>
-</select>
+  							<input type="radio" name="topcoat">
+  							<div class="topcoat-radio-button__checkmark"></div>
+  							Technical Knockout (TKO)
+	    				</label>
+	    				<br>
 
+	    				<label class="topcoat-radio-button">
+  							<input type="radio" name="topcoat">
+  							<div class="topcoat-radio-button__checkmark"></div>
+ 							Majority Decision
+	    				</label>
+	    				<br>
 
-	    <br> 
-	    <br>
+	    				<label class="topcoat-radio-button">
+  							<input type="radio" name="topcoat">
+  							<div class="topcoat-radio-button__checkmark"></div>
+  							Split Decision
+	    				</label>
+	    				<br>
+
+	    				<label class="topcoat-radio-button">
+  							<input type="radio" name="topcoat">
+  							<div class="topcoat-radio-button__checkmark"></div>
+  							Draw
+	    				</label>
+	    				<br>
+	    			</form>
+	    		</div>
+	    		<br>
+	    		
+	    		Round:<br>
+				
+				<select>
+	  				<option value="round1">Round 1</option>
+	  				<option value="round2">Round 2</option>
+	  				<option value="round3">Round 3</option>
+	  				<option value="round4">Round 4</option>
+	  				<option value="round5">Round 5</option>
+	  				<option value="round6">Round 6</option>
+					<option value="round7">Round 7</option>
+					<option value="round8">Round 8</option>
+					<option value="round9">Round 9</option>
+					<option value="round10">Round 10</option>
+					<option value="round11">Round 11</option>
+					<option value="round12">Round 12</option>
+				</select>
+			    <br> 
+	    		<br>
 	    
-    <a href="#confirmshare" class="navigate submitbutton">Submit and share</a><br>
+    			<a href="#confirmshare" class="navigate ftw-button-dark">Submit and share</a><br>
 
 
 	    </content>
@@ -537,7 +557,7 @@
 </div>
 	    <div class="topcoat-navigation-bar__item center half">
 	      <h1 class="topcoat-navigation-bar__title">
-		Score the Fight
+				Score the Fight
 		</h1>
 	      
 	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
@@ -547,14 +567,14 @@
 
 	  <content class="content">
 
-	    <div class="topcoat-button-bar__item">
+	    
 
-    <a href="#scoreround" class="navigate submitbutton">Score Round 1</a>
-  </div>
+    
+  
 
 <br>
-<h1>Your Scorecard</h1>
-	    <table border=1 width=350>
+		<h1 class="scorecard">Your Scorecard</h1>
+	    <table border=1 width="100%">
 	      <tr>
 		<td>Round</td>
 		<td>Canelo</td>
@@ -601,6 +621,8 @@
 		<td><br></td>
 	      </tr>
 	      </table>
+<br><br>
+<a href="#scoreround" class="navigate ftw-button-dark" style="margin-top:500px; clear:both; position:relative;">Score Round 1</a>
 
 	    </content>
 
