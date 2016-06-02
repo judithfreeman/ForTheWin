@@ -17,8 +17,15 @@
  * under the License.
  */
 
-/* page navigation CSS transitions */
+/* Fonts */
+@font-face {
+  font-family: 'Trimposter condensed';
+  src: url('../font/TrimPoster_Condensed.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* page navigation CSS transitions */
 .page {
     position: absolute;
     top: 0;
@@ -57,6 +64,60 @@
       display: none;
 }
 
+/************ General Styles ***************/
+html {
+  width:100%;
+}
+body {
+  width:100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align:center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 38px;
+  line-height: 44px;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 40px;
+}
+h4 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+h6 {
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+/************ Top Bar ***************/
 .topcoat-navigation-bar {
 			position: fixed;
 			width: 100%;
@@ -166,7 +227,7 @@ text-decoration: none;
     }
  
     .tab-links li {
-        margin:0px 5px;
+        margin:0px 10px;
         float:left;
         list-style:none;
     }
@@ -180,6 +241,7 @@ text-decoration: none;
             font-weight:600;
             color:#FFFFFF;
             transition:all linear 0.15s;
+            text-decoration:none;
         }
  
         .tab-links a:hover {
@@ -188,8 +250,12 @@ text-decoration: none;
         }
  
     li.active a, li.active a:hover {
-        background:#fff;
+        background: rgba(135,117,79,0.25);
         color:#4c4c4c;
+        text-decoration:none;
+        /* border-left: thin solid #554a2e;
+        border-right: thin solid #554a2e;
+        border-top: thin solid #554a2e; */
     }
  
     /*----- Content of Tabs -----*/
@@ -197,7 +263,8 @@ text-decoration: none;
         padding:15px;
         border-radius:3px;
         box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
-        background:#fff;
+        background: rgba(135,117,79,0.25);
+        margin:0 auto;
     }
  
         .tab {
@@ -207,6 +274,48 @@ text-decoration: none;
         .tab.active {
             display:block;
         }
+
+        .fight-list-header {
+          font-family: 'Trimposter condensed', sans-serif;
+          text-transform:uppercase;
+          font-weight:400;
+          padding:10px 0 20px 0;
+          text-align:center;
+          letter-spacing: 1px;
+          /* color:#84754e; */
+          color: #554a2e;
+          font-size:40px;
+
+        }
+
+        .fight-list {
+          border-top:thin solid white;
+          width:100%;
+          display: block;
+          margin:0 auto 30px auto;
+          padding:10px 0;
+          float: none;
+          clear: both;
+          background-color: transparent;
+          -webkit-transition: opacity 200ms ease;
+          transition: opacity 200ms ease;
+          font-family: Montserrat, sans-serif;
+          color: #000;
+          font-weight: 700;
+          text-align: left;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+
+          .fight-list a {
+            text-underline:none;
+            
+          }
+
+          .last-in-fight-list {
+            border-bottom:thin solid white;
+          }
 
 .header, .footer {
   background-color: #84754e;

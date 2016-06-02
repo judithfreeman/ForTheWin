@@ -28,270 +28,299 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
+        <meta charset="utf-8">
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
         <title>For The Win</title>
 
-	<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+        <!-- Stylesheets -->
+		<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css">
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/brackets.css" />
-        <!-- <link rel="stylesheet" href="css/index.css" /> -->
         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <script type="text/javascript" src="js/modernizr.js"></script>
 
-   <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-   <script type="text/javascript" src="js/index.js"></script>
-   <script type="text/javascript" src="js/fastclick.js"></script>
-   <script type="text/javascript" src="js/hammer.min.js"></script>
+        <!-- Javascript -->
+	   <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	   <script type="text/javascript" src="js/index.js"></script>
+	   <script type="text/javascript" src="js/fastclick.js"></script>
+	   <script type="text/javascript" src="js/hammer.min.js"></script>
 
-<!-- START FROM JOSH -->
+		<!-- Fonts -->
+		<script src="js/webfont.js"></script>
+	  	<script>
+	    	WebFont.load({
+	      	google: {
+	        	families: ["Montserrat:400,700"]
+	      	}
+	    	});
+	  	</script>
 
-  <script src="js/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ["Montserrat:400,700"]
-      }
-    });
-  </script>
-
-<!--
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Webflow">
-  <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
-  <link rel="stylesheet" type="text/css" href="css/ftw-preview.webflow.css">
-  <script type="text/javascript" src="js/modernizr.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="images/32.png">
-  <link rel="apple-touch-icon" href="images/256.png">
-
-END FROM JOSH -->
+	<!--
+	  <link rel="shortcut icon" type="image/x-icon" href="images/32.png">
+	  <link rel="apple-touch-icon" href="images/256.png">
+	END FROM JOSH -->
 
     </head>
+
     <body id="body">
+        
         <!-- START HOMEPAGE -->
+        <!-- Homepage Nav -->
         <div id="homepage" class="page center">
 
-          <div class="topcoat-navigation-bar header">
+	        <div class="topcoat-navigation-bar header">
 
-	    <div class="topcoat-navigation-bar__item left quarter">
-</div>
-	    <div class="topcoat-navigation-bar__item center half">
+			    <div class="topcoat-navigation-bar__item left quarter"></div>
+			    <div class="topcoat-navigation-bar__item center half">
 
-<img width="220" src="img/ftw_logo.png" class="logo">
-	      
-	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
-	      </div>
-<div class="topcoat-navigation-bar__item right quarter"></div>
-	    </div>
+					<img width="220" src="img/ftw_logo.png" class="logo">
+			      
+			     	<!-- <span class="spinner icon-refresh icon-spin"></span>-->
+			    </div>
+
+				<div class="topcoat-navigation-bar__item right quarter"></div>
+	    	</div><!-- end homepage top navigation -->
   
-	  <content class="content">
-<br><br>
-	<h3 align="center">    Welcome to For the Win -- <br>where boxing and MMA fans go to get in on the fight action. </h3>
+	  		<!-- Homepage Content -->
+		  	<content class="content">
+				<br><br>
+				<h3>
+					Welcome to For the Win -- <br>
+					where boxing and MMA fans go to get in on the fight action.
+				</h3>
 
-<br>
-	    <div class="topcoat-button-bar__item">
+				<br>
+			    
+			    <!-- Tab Section -->
+			    
 
-<!--	      <button class="topcoat-button-bar__button--large">Sign Up With Facebook</button>
-	-->     
+					<div class="tabs">
+				    	<ul class="tab-links">
+				        	<li class="active"><a href="#tab1">Boxing</a></li>
+				        	<li><a href="#tab2">MMA</a></li>
+				        	<!-- <li><a href="#tab3">Baseball</a></li> -->
+				    	</ul>
+				 
+				 		
+				    	<div class="tab-content">
 
-<div class="tabs">
-    <ul class="tab-links">
-        <li class="active"><a href="#tab1">Boxing</a></li>
-        <li><a href="#tab2">MMA</a></li>
-        <!-- <li><a href="#tab3">Baseball</a></li> -->
-    </ul>
- 
-    <div class="tab-content">
-        <div id="tab1" class="tab active">
-<h3>Pick A Fight</h3>
-<a href="#prediction" class="navigate submitbutton">May 7: Canelo vs Khan</a>
-<a href="#prediction" class="navigate submitbutton">June 25: Thurman vs Porter</a>
-<a href="#prediction" class="navigate submitbutton">July 9: Fury vs Klitschko</a>
-<a href="#prediction" class="navigate submitbutton">July 23: Crawford vs Postol</a>
+				    		<!-- Homepage Tab 1 Content / Boxing -->
+				        	<div id="tab1" class="tab active">
+							
+								<h3 class="fight-list-header">Pick A Fight</h3>
+								<a href="#prediction" class="fight-list">May 7: Canelo vs Khan</a>
+								<a href="#prediction" class="fight-list">June 25: Thurman vs Porter</a>
+								<a href="#prediction" class="fight-list">July 9: Fury vs Klitschko</a>
+								<a href="#prediction" class="fight-list last-in-fight-list">July 23: Crawford vs Postol</a>
 
-        </div>
- 
-        <div id="tab2" class="tab">
-<h3>Pick A Fight</h3>
-<a href="#prediction" class="navigate submitbutton">May 25: Almeida vs Garbrandt</a>
-<a href="#prediction" class="navigate submitbutton">June 4: Rockhold vs Bisping</a>            
-<a href="#prediction" class="navigate submitbutton">June 17: Galvao vs Dantas</a>
-<a href="#prediction" class="navigate submitbutton">June 17: Ivanov vs Copeland</a>
+				        	</div>
+				 
+					 		<!-- Homepage Tab 2 Content / MMA -->
+					        <div id="tab2" class="tab">
+								
+								<h3 class="fight-list-header">Pick A Fight</h3>
+								<a href="#prediction" class="fight-list">May 25: Almeida vs Garbrandt</a>
+								<a href="#prediction" class="fight-list">June 4: Rockhold vs Bisping</a>            
+								<a href="#prediction" class="fight-list">June 17: Galvao vs Dantas</a>
+								<a href="#prediction" class="fight-list">June 17: Ivanov vs Copeland</a>
 
-        </div>
- 
-        <div id="tab3" class="tab">
-            <p>Baseball content</p>
-        </div>
- 
-    </div>
-</div>
+					        </div>
+					 
+					 		<!-- Homepage Tab 3 Content / Baseball -->
+					 		<!-- 
+					        <div id="tab3" class="tab">
+					            <p>Baseball Content</p>
+					        </div>
+					    	-->
+			 
+			    		</div> <!-- end tab-content -->
+					
 
-<br><br>
+					<br><br>
 
-<h3>Score Today's Fights</h3>
-<a href="#scorecard" class="navigate submitbutton">May 7: Canelo vs Khan</a>
+					<!-- Today's Fights -->
+					<h3>Score Today's Fights</h3>
+					
+					<a href="#scorecard" class="navigate submitbutton">
+						May 7: Canelo vs Khan
+					</a>
 
-<!--     <a href="#pickafight" class="topcoat-button-bar__button--large navigate">Pick A Fight</a>
-<br><br> -->
+				  </div><!-- end <div class="topcoat-button-bar__item"> content -->
+		    </content>
+		  
+		  	<!-- Homepage Footer -->
+	 	  	<footer class="topcoat-navigation-bar footer">
+		    	<div class="topcoat-navigation-bar__item left quarter">
+		      		<a href="#homepage" class="refresh_location fa fa-home icon navigate"></a>
+		      	</div>
+		    	    
+		    	<div class="topcoat-navigation-bar__item center quarter center-right">
+	            	<a href="#scorecard" class="fa fa-trophy icon navigate"></a>
+		      	</div>
 
-  </div>
-	    </content>
-	  
- 	  <footer class="topcoat-navigation-bar footer">
-	    <div class="topcoat-navigation-bar__item left quarter">
-	      <a href="#homepage" class="refresh_location fa fa-home icon navigate"></a>
+		    	<div class="topcoat-navigation-bar__item left quarter center-left">
+	            	<a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
+		      	</div>
+		    
+		    	<div class="topcoat-navigation-bar__item center quarter">
+		      		<a href="#settings" class="fa fa-cog icon navigate"></a> 
+			    </div>
+		    </footer>
 
-	      </div>
-	    	    
-	    <div class="topcoat-navigation-bar__item center quarter center-right">
-              <a href="#scorecard" class="fa fa-trophy icon navigate"></a>
-	      </div>
-
-	    <div class="topcoat-navigation-bar__item left quarter center-left">
-              <a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
-
-	      </div>
-	    
-	    <div class="topcoat-navigation-bar__item center quarter">
-	      <a href="#settings" class="fa fa-cog icon navigate"></a> 
-
-	      </div>
-	    
-	    
-	    </footer>
-
-        </div><!-- END HOMEPAGE -->
+    	</div><!-- END HOMEPAGE -->
         
-        <!-- START PICKAFIGHT -->
+        <!-- START PICKAFIGHT PAGE-->
         <div id="pickafight" class="page center">
 
-          <div class="topcoat-navigation-bar header">
+        	<!-- Pick A Fight Top Bar -->
+        	<div class="topcoat-navigation-bar header">
 
-	    <div class="topcoat-navigation-bar__item left quarter">
-<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
-</div>
-	    <div class="topcoat-navigation-bar__item center half">
-	      <h1 class="topcoat-navigation-bar__title">
-		Pick A Fight
-		</h1>
+	    		<div class="topcoat-navigation-bar__item left quarter">
+					<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+				</div>
+	    		
+	    		<div class="topcoat-navigation-bar__item center half">
+
+	      			<h1 class="topcoat-navigation-bar__title">
+						Pick A Fight
+					</h1>
 	      
-	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
-	      </div>
-<div class="topcoat-navigation-bar__item right quarter"></div>
-	    </div>
+	      			<!-- <span class="spinner icon-refresh icon-spin"></span>-->
+	      		</div>
+
+				<div class="topcoat-navigation-bar__item right quarter"></div>
+	    	</div>
 	  
-	  <content class="content">
+	  		<!-- Pick A Fight Content -->
+	  		<content class="content">
 
-	    <div class="topcoat-button-bar__item">
+	    		<div class="topcoat-button-bar__item">
 
-	      <br><br>
+		      		<br><br>
 
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Canelo Alverez vs Amir Khan
-	    </label><br>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Keith Thurman vs Shawn Porter
-	    </label>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Tyson Fury vs Wladimir Klitschko
-	    </label><br>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Terence Crawford vs Viktor Postol
-	    </label>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Leo Santa Cruz vs Carl Frampton
-	    </label><br>
+		    		<label class="topcoat-radio-button">
+		  				<input type="radio" name="topcoat">
+		  				<div class="topcoat-radio-button__checkmark"></div>
+		  				Canelo Alverez vs Amir Khan
+		    		</label>
+		    		<br>
+		    
+		    		<label class="topcoat-radio-button">
+	  					<input type="radio" name="topcoat">
+	  					<div class="topcoat-radio-button__checkmark"></div>
+	  					Keith Thurman vs Shawn Porter
+		    		</label>
 
-	      
-    <a href="#prediction" class="topcoat-button-bar__button--large navigate">Submit and Predict the Winner</a>
-  </div>
-	    </content>
+		    		<label class="topcoat-radio-button">
+	  					<input type="radio" name="topcoat">
+	  					<div class="topcoat-radio-button__checkmark"></div>
+	  					Tyson Fury vs Wladimir Klitschko
+		    		</label>
+		    		<br>
+
+		    		<label class="topcoat-radio-button">
+	  					<input type="radio" name="topcoat">
+	  					<div class="topcoat-radio-button__checkmark"></div>
+	  					Terence Crawford vs Viktor Postol
+		    		</label>
+
+		    		<label class="topcoat-radio-button">
+	  					<input type="radio" name="topcoat">
+	  					<div class="topcoat-radio-button__checkmark"></div>
+	  					Leo Santa Cruz vs Carl Frampton
+		    		</label>
+		    		<br>
+
+		      		<a href="#prediction" class="topcoat-button-bar__button--large navigate">Submit and Predict the Winner</a>
+  				</div>
+	    	</content><!-- End Pick A Fight Content Section -->
 	  
-	  <footer class="topcoat-navigation-bar footer">
-	    <div class="topcoat-navigation-bar__item left quarter">
-	      <a href="#homepage" class="refresh_location fa fa-home icon navigate"></a>
+		  	<!-- Pick A Fight Footer -->
+		  	<footer class="topcoat-navigation-bar footer">
+		    	
+		    	<div class="topcoat-navigation-bar__item left quarter">
+		      		<a href="#homepage" class="refresh_location fa fa-home icon navigate"></a>
+		      	</div>
+		    	    
+		    	<div class="topcoat-navigation-bar__item center quarter center-right">
+	            	  <a href="#scorecard" class="fa fa-trophy icon navigate"></a>
+		      	</div>
 
-	      </div>
-	    	    
-	    <div class="topcoat-navigation-bar__item center quarter center-right">
-              <a href="#scorecard" class="fa fa-trophy icon navigate"></a>
-	      </div>
+		    	<div class="topcoat-navigation-bar__item left quarter center-left">
+	              	<a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
+		    	</div>
+		    
+		    	<div class="topcoat-navigation-bar__item center quarter">
+		      		<a href="#settings" class="fa fa-cog icon navigate"></a> 
+		    	</div>
+		    
+		    </footer><!-- End Pick a Fight Footer -->
 
-	    <div class="topcoat-navigation-bar__item left quarter center-left">
-              <a href="#overallpredictions" class="fa fa-bar-chart icon navigate"></a>
+    	</div><!-- END PICKAFIGHT -->
 
-	      </div>
-	    
-	    <div class="topcoat-navigation-bar__item center quarter">
-	      <a href="#settings" class="fa fa-cog icon navigate"></a> 
-
-	      </div>
-	    
-	    
-	    </footer>
-
-        </div>
-
-	<!-- END PICKAFIGHT -->
-
-       <!-- START YOUR PREDICTION PAGE -->
+       	<!-- START YOUR PREDICTION PAGE -->
         <div id="prediction" class="page left">
 
-          <div class="topcoat-navigation-bar header">
+        	<!-- Start Your Prediction Top Bar -->
+        	<div class="topcoat-navigation-bar header">
 
-	    <div class="topcoat-navigation-bar__item left quarter">
-<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
-</div>
-	    <div class="topcoat-navigation-bar__item center half">
-	      <h1 class="topcoat-navigation-bar__title">
-		Predict the Outcome
-		</h1>
-	      
-	      <!-- <span class="spinner icon-refresh icon-spin"></span>-->
-	      </div>
-<div class="topcoat-navigation-bar__item right quarter"></div>
-	    </div>
+		    	<div class="topcoat-navigation-bar__item left quarter">
+					<a href="#back" class="back fa fa-chevron-left icon navigate"></a>
+				</div>
+		    
+		    	<div class="topcoat-navigation-bar__item center half">
+		      		<h1 class="topcoat-navigation-bar__title">Predict the Outcome</h1>
+		      
+		      		<!-- <span class="spinner icon-refresh icon-spin"></span>-->
+		      	</div>
+
+				<div class="topcoat-navigation-bar__item right quarter"></div>
+	    	</div><!-- End Start Your Prediction Top Bar -->
 	  
-	  <content class="content">
-<br>
-	    <h2 align="center">Canelo Alverez vs Amir Khan </h2>
+	  		<!-- Start Your Prediction Content -->
+	  		<content class="content">
+				
+				<br>
+	    		<h2 align="center">Canelo Alverez vs Amir Khan</h2>
 
-	    Winner:<br><div class="winner">
-	    <form>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Canelo Alverez
-	    </label><br>
-	    <label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
-  Amir Khan
-	    </label></form></div>
+	    		Winner:<br>
+
+	    		<div class="winner">
+	    			<form>
+	   					<label class="topcoat-radio-button">
+  							<input type="radio" name="topcoat">
+  								<div class="topcoat-radio-button__checkmark"></div>
+  								Canelo Alverez
+	  				  	</label>
+	  				  	<br>
+
+	    				<label class="topcoat-radio-button">
+  							<input type="radio" name="topcoat">
+  								<div class="topcoat-radio-button__checkmark"></div>
+  								Amir Khan
+	    				</label>
+	    			</form>
+	    		</div>
 	
-	    <br>
-	    By:<br><div class="method"><form>
-<label class="topcoat-radio-button">
-  <input type="radio" name="topcoat">
-  <div class="topcoat-radio-button__checkmark"></div>
- Knockout
-	    </label><br>
-	    <label class="topcoat-radio-button">
+	    		<br>
+	    		
+	    		By:<br>
+	    		<div class="method">
+	    			<form>
+						<label class="topcoat-radio-button">
+							<input type="radio" name="topcoat">
+						  		<div class="topcoat-radio-button__checkmark"></div>
+						 		Knockout
+						</label>
+						<br>
+	    
+	    				<label class="topcoat-radio-button">
   <input type="radio" name="topcoat">
   <div class="topcoat-radio-button__checkmark"></div>
   Technical Knockout (TKO)
@@ -923,3 +952,4 @@ Friend4 9 10<br>
 
     </body>
 </html>
+	
