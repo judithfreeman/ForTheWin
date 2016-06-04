@@ -98,9 +98,14 @@ h1 {
   letter-spacing: 1.25px;
 }
 h2 {
-  font-size: 32px;
-  line-height: 36px;
-  margin-top: 20px;
+  font-family: 'Trimposter condensed', sans-serif;
+  text-transform:uppercase;
+  font-weight:400;
+  padding:30px 0 20px 0;
+  text-align:center;
+  letter-spacing: 1px;
+  color: #000;
+  font-size:40px;
 }
 h3 {
   font-size: 24px;
@@ -137,18 +142,18 @@ p {
 
 /************ Top Bar + Footer ***************/
 .topcoat-navigation-bar {
-			position: fixed;
-			width: 100%;
-			padding: 0rem;
-			z-index: 10;
-			background-color: #f8f8f8;
+	position: fixed;
+	width: 100%;
+	padding: 0rem;
+	z-index: 10;
+	background-color: #f8f8f8;
 }
 
 .topcoat-navigation-bar__title {
-			       font-size: 1.35rem;
-			       font-weight: 500;
-			       display: inline;
-			       margin-left: -1.5;
+	font-size: 1.35rem;
+	font-weight: 500;
+	display: inline;
+	margin-left: -1.5;
 }
 
 .header .topcoat-navigation-bar__item {
@@ -185,10 +190,11 @@ p {
 
 .logo {
   display: block;
-  margin-right: auto;
-  margin-left: -0.6rem;
-  padding-top: 0.8rem;
+  margin:0 auto;
+  padding: ;
   -webkit-filter: invert(100%);
+  max-height:50px;
+  width:auto;
 }
 
 .footer {
@@ -452,4 +458,56 @@ h3.todays-fight {
 /************ Scorecard ***************/
 h1.scorecard {
   font-size:48px;
+}
+table.scorecard {
+  text-align:center;
+  width:99%;
+}
+table.scorecard th {
+  font-weight:400;
+  border-left:none;
+  border-right:none;
+  background-color:none;
+}
+table.scorecard tr {
+  border-top:thin solid white;
+  border-bottom:none;
+  border-right:none;
+  border-left:none;
+  padding:1px 0 0 0;
+}
+table.scorecard td {
+  background: rgba(135,117,79,0.25);
+  border:none;
+  padding:10px 0;
+  border:thin solid white;
+}
+/************ Predictions & Odds Page ***************/
+.predictions h3 {
+  font-size:20px;
+  text-align:center;
+  margin:0;
+  color:#84754e;
+}
+.prediction-list {
+  font-family: Montserrat, sans-serif; 
+  font-weight:400; 
+  position:relative;
+  padding:8px 0; 
+  overflow:auto; 
+  border-top:thin solid #84754e; 
+  width:75%;
+  margin:0 auto;
+  float:none;
+}
+.prediction-last {
+  border-bottom:thin solid #84754e;
+}
+.percentages {
+  width:70%; 
+  padding:7px 15%; 
+  margin:0 auto; 
+  text-align:center; 
+  font-size:1.15em;
+  color:#000;
 }
